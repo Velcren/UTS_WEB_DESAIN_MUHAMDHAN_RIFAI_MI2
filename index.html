@@ -89,50 +89,6 @@
         max-width: 100%;
     }
 
-    /* jadwal penampilan */
-    #jadwal table {
-        background-color: #1a1a2e;
-        color: white;
-    }
-
-    #jadwal tbody tr:nth-child(even) {
-        background-color: #222240;
-    }
-
-    #jadwal tbody tr:hover {
-        background-color: #e94560;
-        color: white;
-    }
-    
-    /* Form harga tiket */
-    .card {
-        background: #1a1a2e !important;
-        border: 1px solid #e94560;
-    }
-
-    .form-control {
-        background: #0f0f1a;
-        color: white;
-        border: 1px solid #444;
-    }
-
-    .form-control:focus {
-        border-color: #e94560;
-        box-shadow: 0 0 0 0.2rem rgba(233,69,96,.25);
-        background: #0f0f1a;
-        color: white;
-    }
-
-    .btn-danger {
-        background: #e94560;
-        border: none;
-        font-weight: bold;
-    }
-
-    .btn-danger:hover {
-        background: #ff5c79;
-    }
-
     /* Kartu lineup artis */
     .artist-card {
         background: #1a1a2e;
@@ -279,8 +235,8 @@ Lengkapi [...] dengan class Bootstrap yang tepat
     <strong>baris selang-seling (striped)</strong>,
     <strong>efek hover</strong>, dan <strong>responsif di HP</strong>.</em>
     </p>
-    <div class="table_responsive">
-    <table class="table table-bordered table-striped table-hover">
+    <div class="tabble_responsive">
+    <table class="table table-bordered tabble-striped table-hover">
     <thead class="thead-dark">
     <tr>
     <th>Hari</th>
@@ -352,40 +308,41 @@ Lengkapi [...] dengan class Bootstrap yang tepat
     </p>
     <div class="row justify-content-center">
         <div class="col-md-7">
-            <div class="card p-4 bg-dark text-light">
-            <div class="form-group">
+            <div class="[...3a]">
+            <div class="[...3b]">
                 <label for="nama">Nama Lengkap</label>
                 <td>:</td>
-                <input type="text" class="form-control" id="nama" placeholder="Masukkan nama lengkap Anda"/>
+                <input type="text" class="[...3c]" id="nama" placeholder="Masukkan nama
+                lengkap Anda"/>
             </div>
-            <div class="form-group">
+            <div class="[...3b]">
                 <label for="email">Alamat Email</label>
                 <td>:</td>
-                <input type="email" class="form-control" id="email"
+                <input type="email" class="[...3c]" id="email"
                 placeholder="contoh@email.com"/>
             </div>
-            <div class="form-group">
+            <div class="[...3b]">
                 <label for="telp">Nomor Telepon</label>
                 <td>:</td>
-                <input type="tel" class="form-control" id="telp" placeholder="08xxxxxxxxxx"/>
+                <input type="tel" class="[...3c]" id="telp" placeholder="08xxxxxxxxxx"/>
             </div>
-            <div class="form-group">
+            <div class="[...3b]">
                 <label for="tiket">Jenis Tiket</label>
                 <td>:</td>
-                <select class="form-control" id="tiket">
+                <select class="[...3c]" id="tiket">
                 <option value="">-- Pilih Jenis Tiket --</option>
                 <option>Regular (Rp 150.000)</option>
                 <option>VIP (Rp 350.000)</option>
                 <option>VVIP (Rp 750.000)</option>
                 </select>
             </div>
-            <div class="form-group">
+            <div class="[...3b]">
                 <label for="jumlah">Jumlah Tiket</label>
                 
-                <input type="number" class="form-control" id="jumlah" min="1" max="10" value="1"/>
-                <small class="form-text text-muted">Maksimal pembelian 10 tiket per transaksi.</small>
+                <input type="number" class="[...3c]" id="jumlah" min="1" max="10" value="1"/>
+                <small class="[...3d]">Maksimal pembelian 10 tiket per transaksi.</small>
             </div>
-            <div class="form-group">
+            <div class="[...3b]">
                 <div class="form-check">
                     <input type="checkbox" class="form-check-input" id="syarat"/>
                     <label class="form-check-label" for="syarat">
@@ -416,73 +373,45 @@ menggunakan Bootstrap Grid dan komponen lainnya
     Kamu bebas menentukan warna, teks, dan detail desainnya.</em>
     </p>
     <!-- ✏■ TULIS KODE KAMU DI BAWAH INI -->
-<div class="row">
+<section id="lineup">
+<div class="container">
 
-    <!-- Regular -->
-    <div class="col-md-4 mb-4">
-        <div class="ticket-card d-flex flex-column h-100">
-            <img src="https://f4.bcbits.com/img/a2480889494_10.jpg"/>
-
-
-            <div class="type">REGULAR</div>
-            <div class="price">Rp150.000</div>
-
-            <ul class="ticket-list">
-                <li>Keuntungan 1</li>
-                <li>Keuntungan 2</li>
-                <li>Keuntungan 3</li>
-            </ul>
-
-            <button class="btn btn-danger btn-block mt-auto">
-                BELI SEKARANG
-            </button>
-
-        </div>
-    </div>
-
-    <!-- VIP -->
-    <div class="col-md-4 mb-4">
-        <div class="ticket-card d-flex flex-column h-100">
-            <img src="https://f4.bcbits.com/img/a2480889494_10.jpg"/>
-
-
-            <div class="type">VIP</div>
-            <div class="price">Rp350.000</div>
-
-            <ul class="ticket-list">
-                <li>Keuntungan 1</li>
-                <li>Keuntungan 2</li>
-                <li>Keuntungan 3</li>
-            </ul>
-
-            <button class="btn btn-warning btn-block mt-auto">
-                BELI SEKARANG
-            </button>
-
-        </div>
-    </div>
-
-    <!-- VVIP -->
-    <div class="col-md-4 mb-4">
-        <div class="ticket-card d-flex flex-column h-100">
-            <img src="https://f4.bcbits.com/img/a2480889494_10.jpg"/>
+    <div class="row">
             
-            <div class="type">VVIP</div>
-            <div class="price">Rp750.000</div>
-
-            <ul class="ticket-list">
-                <li>Keuntungan 1</li>
-                <li>Keuntungan 2</li>
-                <li>Keuntungan 3</li>
-            </ul>
-
-            <button class="btn btn-success btn-block mt-auto">
-                BELI SEKARANG
-            </button>
-
+        <div class="col-12 col-md-6 col-lg-4">
+            <div class="artist-card">
+            <img src="https://hypeabis.id/assets/content/20230322130743000000F083F16D9BFC45E997E0F2310F83BC25.jpeg" alt="Artis 1"/>
+            <h5>REGULAR</h5>
+            <h5>Rp 150.000</h5>
+            <li>[Keuntungan 1]</li>
+            <li>[Keuntungan 2]</li>
+            <li>[Keuntungan 3]</li>
+            <button>TOMBOL BELI</button>
+            </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4">
+            <div class="artist-card">
+            <img src="https://hypeabis.id/assets/content/20230322130743000000F083F16D9BFC45E997E0F2310F83BC25.jpeg" alt="Artis 1"/>
+            <h5>VIP</h5>
+            <h5>Rp 350.000</h5>
+            <li>[Keuntungan 1]</li>
+            <li>[Keuntungan 2]</li>
+            <li>[Keuntungan 3]</li>
+            <button>TOMBOL BELI</button>
+            </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4">
+            <div class="artist-card">
+            <img src="https://hypeabis.id/assets/content/20230322130743000000F083F16D9BFC45E997E0F2310F83BC25.jpeg" alt="Artis 1"/>
+            <h5>VVIP</h5>
+            <h5>Rp 750.000</h5>
+            <li>[Keuntungan 1]</li>
+            <li>[Keuntungan 2]</li>
+            <li>[Keuntungan 3]</li>
+            <button>TOMBOL BELI</button>
+            </div>
         </div>
     </div>
-
 </div>
     <!-- ✏■ AKHIR KODE SOAL 4 -->
 </div>
@@ -501,58 +430,26 @@ Buat section Kontak/Footer dengan kreativitasmu sendiri
     Minimal berisi: alamat, email, nomor telepon, dan media sosial event.</em>
     </p>
     <!-- ✏■ TULIS KODE KREATIFMU DI BAWAH INI -->
-    <div class="row">
-
-    <div class="col-md-6 mb-4">
-        <div class="card bg-dark text-light border-danger">
-            <div class="card-body">
-
-                <h4 class="text-danger">
-                    SOUNDWAVE FEST 2025
-                </h4>
-
-                <p>
-                    Festival musik terbesar yang menghadirkan
-                    puluhan artis terbaik Indonesia.
-                </p>
-
-            </div>
-        </div>
-    </div>
-
-    <div class="col-md-6">
-        <div class="card bg-dark text-light border-danger">
-            <div class="card-body">
-
-                <h4 class="text-danger">
-                    Informasi Kontak
-                </h4>
-
-                <p>
-                    📍 Gelora Bung Karno, Jakarta
-                </p>
-
-                <p>
-                    📧 infosoundwavefest2025@gmail.com
-                </p>
-
-                <p>
-                    📞 0812-3456-7890
-                </p>
-
-                <p>
-                    📱 Instagram: @soundwavefest2025
-                </p>
-
-                <p>
-                    🌐 Website: www.soundwavefest2025.com
-                </p>
-
-            </div>
-        </div>
-    </div>
-
-</div>
+     <table>
+        <tr>
+        <td>Alamat</td>
+        <td>:</td>
+        <td>Gelora Bung Karno, Jakarta</td>
+        </tr>
+        <tr>
+        <td>Email</td>
+        <td>:</td>
+        <td>infosoundwavefest2025@gmail.com</td>
+        </tr>
+        <td>Nomor Telepon</td>
+        <td>:</td>
+        <td>0812-3456-7890</td>
+        <tr>
+        <td>Media Sosial Event</td>
+        <td>:</td>
+        <td>@soundwavefest2025<link rel="stylesheet" href="https://getbootstrap.com/docs/5.3/layout/containers/">raxsmu</td>
+        </tr>
+    </table>
     <!-- ✏■ AKHIR SOAL 5 -->
 </div>
 </section>
